@@ -19,6 +19,7 @@ export default function Reddit() {
           }}
         />
         <button
+          disabled={query === ''}
           onClick={(event) => {
             event.preventDefault();
             dispatch(fetchSubReddits(query));
